@@ -7,6 +7,17 @@
 
 Se llevó a cabo el diseño de un modelo dimensional para la modelación de los procesos de tratamiento, intervención, diagnóstico y facturación en el Hospital SanaSalud. Se utilizaron herramientas como Power BI y Pentaho para la creación de los procesos ETL (Extracción, Transformación y Carga), y PostgreSQL sirvió como el contenedor de datos transaccionales y dimensionales. Este enfoque permitió mejorar la gestión de información y facilitar el análisis de datos para la toma de decisiones en la atención al paciente.
 
+# Pasos para cargar ETL
+
+1. Correr el script para crear la base de datos transaccional
+2. Correr el script para crear la base de datos dimensional
+3. Correr el script de insert para la base de datos transaccional
+4. Abrir pentaho y abrir los ETL (cambiar las credenciales de conexion para que se pueda conectar a su BD)
+5. En caso de los archivo CSV y TXT debera cambiar la direccion de donde se encuentre ese archivo (debera tenerlo descargado antes de esto)
+6. Una vez realizado estos pasos puede correr los ETL
+
+**Nota:** el dimensional ya esta cargado en el dashboard de Power BI por ende alli no debera cargar ninguna data adicional.
+
 ## Modelo Dimensional
 ![](Imagenes/Dimensional.png)
 
